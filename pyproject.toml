@@ -1,8 +1,0 @@
-[project]
-name = "my-python-project"
-version = "0.1.0"
-requires-python = ">= 3.14.7"
-dependencies = [
-    "pandas>=3.0.6",
-    "plotnine>=0.15.8",
-]
