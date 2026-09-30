@@ -1,12 +1,12 @@
-import platform
-import os
-import sys
-import socket
 import getpass
-import shutil
 import json
-from pathlib import Path
+import os
+import platform
+import shutil
+import socket
+import sys
 from datetime import datetime
+from pathlib import Path
 
 
 def detect_os():
