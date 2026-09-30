@@ -79,7 +79,9 @@ def main():
         json.dump(data, file, ensure_ascii=False, indent=4)
 
     print("Информация успешно собрана.")
-    print("Результат сохранён в system_info.json")
+    print("Результат сохранён в:")
+    print(Path("system_info.json").resolve())
+    os.startfile("system_info.json")
 
 
 if __name__ == "__main__":
