@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "collected_at": "2026-09-30T19:57:52.655814+03:00"
+        "collected_at": "2026-09-30T21:39:04.455370+03:00"
     },
     "system": {
         "os": {
@@ -27,7 +27,7 @@
     },
     "storage": {
         "total_bytes": 511018266624,
-        "used_bytes": 96074129408,
-        "free_bytes": 414944137216
+        "used_bytes": 96156495872,
+        "free_bytes": 414861770752
     }
 }

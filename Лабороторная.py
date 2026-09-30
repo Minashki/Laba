@@ -63,26 +63,22 @@ def collect_storage_info():
     }
 
 
-def main():
-    data = {
-        "metadata": {
-            "collected_at": datetime.now().astimezone().isoformat()
-        },
-        "system": collect_system_info(),
-        "hardware": collect_hardware_info(),
-        "python": collect_python_info(),
-        "user": collect_user_info(),
-        "storage": collect_storage_info()
-    }
 
-    with open("system_info.json", "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+data = {
+    "metadata": {
+        "collected_at": datetime.now().astimezone().isoformat()
+    },
+    "system": collect_system_info(),
+    "hardware": collect_hardware_info(),
+    "python": collect_python_info(),
+    "user": collect_user_info(),
+    "storage": collect_storage_info()
+}
 
-    print("Информация успешно собрана.")
-    print("Результат сохранён в:")
-    print(Path("system_info.json").resolve())
-    os.startfile("system_info.json")
+with open("system_info.json", "w", encoding="utf-8") as file:
+    json.dump(data, file, ensure_ascii=False, indent=4)
 
-
-if __name__ == "__main__":
-    main()
+print("Информация успешно собрана.")
+print("Результат сохранён в:")
+print(Path("system_info.json").resolve())
+os.startfile("system_info.json")
