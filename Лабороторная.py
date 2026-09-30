@@ -57,9 +57,9 @@ def collect_storage_info():
     disk = shutil.disk_usage(Path.cwd())
 
     return {
-        "total_bytes": disk.total,
-        "used_bytes": disk.used,
-        "free_bytes": disk.free
+        "total_Gb": round(disk.total / (1024 ** 3), 2),
+        "used_Gb": round(disk.used / (1024 ** 3), 2),
+        "free_Gb": round(disk.free / (1024 ** 3), 2)
     }
 
 

@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "collected_at": "2026-09-30T21:39:04.455370+03:00"
+        "collected_at": "2026-09-30T21:46:25.189686+03:00"
     },
     "system": {
         "os": {
@@ -26,8 +26,8 @@
         "working_directory": "c:\\Users\\Admin\\Desktop\\Технологии программирования\\my-python-project"
     },
     "storage": {
-        "total_bytes": 511018266624,
-        "used_bytes": 96156495872,
-        "free_bytes": 414861770752
+        "total_Gb": 475.92,
+        "used_Gb": 89.56,
+        "free_Gb": 386.37
     }
 }
